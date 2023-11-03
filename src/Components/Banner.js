@@ -134,7 +134,7 @@ function Banner() {
             </div>
             <div className="d-flex gap-3 align-items-center">
               <button className="btn sign__btn text-black" id="btn-connect" data-bs-toggle="modal"
-                data-bs-target="#ConnectWalletModal">
+                data-bs-target="#ConnectWalletModal" onClick={()=>account&&onDisconnect()}>
                 <div
                   className="card__boxbolt"
                   style={{ marginLeft: "10px" }}>
@@ -156,8 +156,7 @@ function Banner() {
                     <>
                       <p
                         className="oneline"
-                        style={{ marginBottom: "-5px" }}
-                        onClick={onDisconnect}>
+                        style={{ marginBottom: "-5px" }}>
                         {account.substr(0, 10)}
                         <span>{"....."}</span>
                         {account.slice(-4)}
