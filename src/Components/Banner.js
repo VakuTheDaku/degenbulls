@@ -120,30 +120,30 @@ function Banner() {
                 }}>
                 DEGENBULLS
               </h2>
-              <Link to="/faq" style={{textDecoration: 'none'}}>
+              <Link to="/faq" style={{ textDecoration: 'none' }}>
                 <h2
-                className="logo_text1"
-                style={{
-                  "text-shadow": "2px 0px 2px red",
-                  color: "#F5C700",
-                  "margin-bottom": "0px",
-                }}>
+                  className="logo_text1"
+                  style={{
+                    "text-shadow": "2px 0px 2px red",
+                    color: "#F5C700",
+                    "margin-bottom": "0px",
+                  }}>
                   FAQ
                 </h2>
               </Link>
             </div>
             <div className="d-flex gap-3 align-items-center">
-              <button className="btn sign__btn text-black" id="btn-connect">
+              <button className="btn sign__btn text-black" id="btn-connect" data-bs-toggle="modal"
+                data-bs-target="#ConnectWalletModal">
                 <div
                   className="card__boxbolt"
-                  style={{marginLeft: "10px"}}>
+                  style={{ marginLeft: "10px" }}>
                   {!account ? (
                     <>
                       <p
                         className="oneline"
                         style={{ marginBottom: "0px" }}
-                        data-bs-toggle="modal"
-                        data-bs-target="#ConnectWalletModal">
+                      >
                         Connect <span>to Wallet</span>
                       </p>
                       <span
